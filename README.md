@@ -24,7 +24,7 @@ FanGate is an open source Facebook Page tab framework with built-in support for 
 
 You'll find a few files inside your folder. Here are the only ones you probably need to worry about:
 
- * `config.php`: Paste your Application ID and Application Secret in the two define()'s in this file using the examples as a guide.
+ * `config.php`: Paste your Application ID and Application Secret in the two `define()`'s in this file using the examples as a guide.
  * `like.html`, `nolike.html`: These are the files that are shown to fans and non-fans respectively. Edit them as you want, keeping in mind that they're bound by a layout set in layout.php. You can make style changes in `css/style.css` as that CSS file is included by default. Add images to whatever directory you want and reference them relatively or absolutely.
 
 Once you've made all the changes you want, upload them to your server and ensure they're at the same path you set in your App configuration.
