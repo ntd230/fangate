@@ -1,24 +1,3 @@
 <?php
-
-/********************************
-* Facebook configuration         
-********************************/
-
-/*
-Your application ID.
-
-e.g.:
-
-define('FB_APP_ID', '210199799004392');
-*/
-define('FB_APP_ID', '');
-
-
-/*
-Your application secret.
-
-e.g.: 
-
-define('FB_APP_SECRET', 'da701d7990ad978b1f02028c0041de11');
-*/
-define('FB_APP_SECRET', '');
+define('FB_APP_ID', '396428870372149');
+define('FB_APP_SECRET', '6ab559d2f33d40c6dbd8a9e24851fb65');
