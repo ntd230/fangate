@@ -1,6 +1,14 @@
 <?php
 require('./fb/facebook.php');
-require('./config.php');
+
+if (file_exists('./config.php'))
+{
+	require('./config.php');
+}
+else
+{
+	die("No configuration found.");
+}
 
 $fb = new Facebook(array(
 	'appId' => FB_APP_ID,
@@ -11,11 +19,11 @@ $data = $fb->getSignedRequest();
 
 if ($data['page']['liked'])
 {
-	$tab_content = './like.html';
+	$tab_content = './tpl/like.html';
 }
 else
 {
-	$tab_content = './nolike.html';
+	$tab_content = './tpl/nolike.html';
 }
 
 require($tab_content);
