@@ -15,7 +15,8 @@ FanGate is an open source Facebook Page tab framework with built-in support for 
  1. To get started, head over to the [Facebook Developer App][1] to create an app of your own. Name it whatever you want, give it a namespace (whatever you want) and enter the human verification test to proceed to the settings page.
 
  2. This is about how the app settings should look:
-   ![Settings screenshot](https://raw.github.com/jimmysawczuk/fangate/master/images/dev-settings.png)
+   
+ ![Settings screenshot](https://raw.github.com/jimmysawczuk/fangate/master/images/dev-settings.png)
 
 ### Create your tab ###
 
