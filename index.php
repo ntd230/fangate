@@ -18,4 +18,4 @@ else
 	$tab_content = './nolike.html';
 }
 
-require('./layout.php');
+require($tab_content);

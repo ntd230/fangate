@@ -18,23 +18,18 @@ FanGate is an open source Facebook Page tab framework with built-in support for 
 
 ### Creating your tabs ###
 
- 1. [Download the source from here][2] and extract it to your hard drive (more download options available [here][3]). If you have Mercurial installed, you can download the code to your machine using this command:
-
-	hg clone https://bitbucket.org/jimmysawczuk/fangate fb_tab 
+ 1. [Download the source from here][2] and extract it to your hard drive (you can also clone it from whatever code hosting site you're viewing this from).
 
 You'll find a few files inside your folder. Here are the only ones you probably need to worry about:
 
  * `config.php`: Paste your Application ID and Application Secret in the two `define()`'s in this file using the examples as a guide.
- * `like.html`, `nolike.html`: These are the files that are shown to fans and non-fans respectively. Edit them as you want, keeping in mind that they're bound by a layout set in layout.php. You can make style changes in `css/style.css` as that CSS file is included by default. Add images to whatever directory you want and reference them relatively or absolutely.
+ * `like.html`, `nolike.html`: These are the files that are shown to fans and non-fans respectively. Edit them as you want. You can make style changes in `css/style.css` as that CSS file is included by default. Add images to whatever directory you want and reference them relatively or absolutely.
 
 Once you've made all the changes you want, upload them to your server and ensure they're at the same path you set in your App configuration.
 
 ### Installing the App to your page ###
 
- 1. On the app settings page, click **Application Profile Page**.
- 2. On the next page, click **Add to My Page**, find for your page in the popup and click the corresponding **Add to Page** button.
- 3. Navigate to your page. The tab should be installed. If it's not, click **Edit Page**, then **Apps**. Find your app in the list that follows, and click **Edit Settings**. Next to **Tab: Available**, click the add link. You can also use this menu to change the name of your tab without editing your app configuration.
+ 1. Navigate to `http://www.facebook.com/dialog/pagetab?app_id=YOUR_APP_ID&next=YOUR_URL`, select your page, and click Install.
 
   [1]: http://www.facebook.com/developers
-  [2]: https://bitbucket.org/jimmysawczuk/fangate/get/tip.zip
-  [3]: https://bitbucket.org/jimmysawczuk/fangate/downloads
+  [2]: https://github.com/jimmysawczuk/fangate/zipball/master
