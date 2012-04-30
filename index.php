@@ -17,7 +17,11 @@ $fb = new Facebook(array(
 	
 $data = $fb->getSignedRequest();
 
-if ($data['page']['liked'])
+if (empty($data))
+{
+	die("Error decoding signed request from Facebook. Make sure your application ID and secret are set correctly.");
+}
+elseif ($data['page']['liked'])
 {
 	$tab_content = './tpl/like.html';
 }
