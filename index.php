@@ -1,33 +1,17 @@
-<?php
-require('./fb/facebook.php');
+<div>H&T 旗艦店即將在此為您服務。</div>
+<div><a href="https://ht.intw.tw">ht.intw.tw</a></div>
 
-if (file_exists('./config.php'))
-{
-	require('./config.php');
-}
-else
-{
-	die("No configuration found.");
-}
+<div>
+<img src="//i2.wp.com/farm3.staticflickr.com/2901/14538200081_550f352c52_z.jpg">
+</div>
 
-$fb = new Facebook(array(
-	'appId' => FB_APP_ID,
-	'secret' => FB_APP_SECRET
-));
-	
-$data = $fb->getSignedRequest();
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-if (empty($data))
-{
-	die("Error decoding signed request from Facebook. Make sure your application ID and secret are set correctly.");
-}
-elseif ($data['page']['liked'])
-{
-	$tab_content = './tpl/like.html';
-}
-else
-{
-	$tab_content = './tpl/nolike.html';
-}
+  ga('create', 'UA-52165640-1', 'auto');
+  ga('send', 'pageview');
 
-require($tab_content);
+</script>

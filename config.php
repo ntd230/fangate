@@ -1,3 +1,3 @@
 <?php
-define('FB_APP_ID', '396428870372149');
-define('FB_APP_SECRET', '6ab559d2f33d40c6dbd8a9e24851fb65');
+define('FB_APP_ID', '1579401905644484');
+define('FB_APP_SECRET', 'dd9a771ead36633484bd3076477bc7f4');
